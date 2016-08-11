@@ -1,0 +1,11 @@
+{{outlet}}
+
+<h1>Users</h1>
+
+{{#each model as |user|}}
+  <div class="well">
+    <h4>User: {{user.name}}</h4>
+    <p>Description {{user.description}}</p>
+    <small>{{user.birthdate}}</small>
+  </div>
+{{/each}}

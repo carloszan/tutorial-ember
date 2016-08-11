@@ -4,6 +4,12 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'tutorial',
     environment: environment,
+    firebase: {
+      apiKey: "AIzaSyDAjPJfN1KFLttHbesgqsrbHb0KtJZZ2R8",
+      authDomain: "tutorial-abff1.firebaseapp.com",
+      databaseURL: "https://tutorial-abff1.firebaseio.com",
+      storageBucket: "tutorial-abff1.appspot.com",
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
