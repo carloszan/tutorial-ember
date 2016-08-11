@@ -4,8 +4,9 @@
 
 {{#each model as |user|}}
   <div class="well">
-    <h4>User: {{user.name}}</h4>
+    <h4>{{#link-to 'users.edit' user.id}}User: {{user.name}}{{/link-to}}</h4>
     <p>Description {{user.description}}</p>
     <small>{{user.birthdate}}</small>
+    <button {{action 'deleteUser' user.id}} class="btn btn-danger"> Delete </button>
   </div>
 {{/each}}
